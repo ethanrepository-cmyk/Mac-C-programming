@@ -75,6 +75,7 @@ void inOrder(Treeptr root) {
     if (root == NULL) return;
     inOrder(root->left);
     printf("%d ",root->data);
+    inOrder(root->right);
 }
 
 int main() {
